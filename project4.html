@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UI/UX Design of Mobile Learning App - Juan Frizco Situmeang</title>
+<meta name="description" content="Detail Project UI/UX Design of a Mobile Programming Learning App oleh Juan Frizco Situmeang">
+<link rel="icon" type="image/png" href="logojuone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+<header>
+  <div class="bar">
+    <a class="brand" href="index.html#bio"> Juan Frizco Situmeang</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html#bio">Bio</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#awards">Awards</a></li>
+        <li><a href="index.html#certificates">Certificates</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <!-- Dark/Light Mode Button -->
+        <li>
+          <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+            <span id="themeIcon" style="display: inline-flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="project-detail">
+    <a href="index.html#projects" class="back-btn">
+      &larr; Back to Portfolio Projects
+    </a>
+
+    <div class="info-card">
+
+      <!-- Carousel Gambar Utama -->
+      <div class="hero-carousel-wrapper">
+        <button class="nav-arrow prev" onclick="prevHeroImg()" aria-label="Previous image">
+          <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <img id="heroImg" src="Gambar/Andro1.jpg" alt="UI/UX Design of a Mobile Programming Learning App" class="project-hero-img" onerror="this.src='https://via.placeholder.com/800x400?text=UI%2FUX+Mobile+Learning+App'">
+
+        <button class="nav-arrow next" onclick="nextHeroImg()" aria-label="Next image">
+          <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+      </div>
+
+      <h1>UI/UX Design of a Mobile Programming Learning App</h1>
+      <p class="meta" style="font-size: 1.05rem; font-weight: 500;">Mobile Programming Practicum (Java Android) Project &bull; Universitas Prima Indonesia</p>
+      
+      <div style="margin-top: 1rem;">
+        <span class="tag">Figma</span>
+        <span class="tag">Android Studio</span>
+        <span class="tag">Java</span>
+        <span class="tag">UI/UX Design</span>
+        <span class="tag">Mobile Prototyping</span>
+      </div>
+
+      <div class="detail-grid">
+        <div>
+          <h3>Overview</h3>
+          <p style="text-align: justify; max-width: none;">
+            This project focuses on the <strong>User Interface (UI) and User Experience (UX) Design</strong> of an educational mobile application built for learning mobile programming. Developed as part of the Java Android-based Mobile Programming Practicum, the application aims to provide students and beginners with an intuitive, interactive, and structured platform to study programming concepts.
+          </p>
+
+          <h3 style="margin-top: 1.5rem;">Key Features &amp; Design Highlights</h3>
+          <ul class="feature-list">
+            <li><strong>User-Centered Mobile Interface:</strong> Designed intuitive navigation, clear visual hierarchy, and accessible controls tailored for mobile screens using Figma.</li>
+            <li><strong>Interactive Learning Modules:</strong> Structured lesson paths, code snippet previews, and progress tracking indicators to enhance learning engagement.</li>
+            <li><strong>High-Fidelity Prototyping:</strong> Created interactive prototypes in Figma to map user flows before implementing layout XML and Java logic in Android Studio.</li>
+            <li><strong>Responsive Layout System:</strong> Optimized interface elements for various Android mobile screen sizes and orientations.</li>
+          </ul>
+
+          <h3 style="margin-top: 1.5rem;">Project Impact</h3>
+          <p style="text-align: justify; max-width: none;">
+            This project combined human-centered UI/UX design principles with practical Android development tools, creating a seamless bridge between visual design conceptualization and front-end mobile execution.
+          </p>
+        </div>
+
+        <div>
+          <div class="info-card" style="background: var(--bg); padding: 1.25rem;">
+            <h3 style="margin-bottom: 0.75rem;">Project Info</h3>
+            
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Category:</strong> UI/UX Design &amp; Mobile App</p>
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Role:</strong> UI/UX Designer &amp; Android Developer</p>
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Context:</strong> Mobile Programming Practicum</p>
+
+            <div class="download-links" style="margin-top: 1.25rem;">
+              <a href="https://www.figma.com/design/m0tF1Vtq6NB3T04qX38SyQ/E-Learning?node-id=0-1&amp;t=rjaLMO5j1XRFnh5p-0" target="_blank" rel="noopener noreferrer" class="download-btn" style="width: 100%;">
+                View Figma Prototype &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigasi Bawah Proyek -->
+      <div style="display: flex; justify-content: flex-start; align-items: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line);">
+        <a href="project3.html" class="download-btn">
+          &larr; Previous Project: Quiz Management System
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="meta">&copy; 2026 - Juan Frizco Situmeang</p>
+</footer>
+
+<script>
+  const heroImages = [
+    'Gambar/Andro1.jpg',
+    'Gambar/Andro2.jpg',
+    'Gambar/Andro3.png',
+    'Gambar/Andro4.jpg',
+    'Gambar/Andro5.png'
+  ];
+  let currentHeroIndex = 0;
+
+  function updateHeroImage() {
+    const heroImg = document.getElementById('heroImg');
+    if (heroImg) {
+      heroImg.src = heroImages[currentHeroIndex];
+    }
+  }
+
+  function prevHeroImg() {
+    currentHeroIndex = (currentHeroIndex - 1 + heroImages.length) % heroImages.length;
+    updateHeroImage();
+  }
+
+  function nextHeroImg() {
+    currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
+    updateHeroImage();
+  }
+</script>
+<script src="theme.js"></script>
+
+</body>
+</html>

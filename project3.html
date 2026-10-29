@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz Management System - Juan Frizco Situmeang</title>
+<meta name="description" content="Detail Project Quiz Management System oleh Juan Frizco Situmeang">
+<link rel="icon" type="image/png" href="logojuone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+<header>
+  <div class="bar">
+    <a class="brand" href="index.html#bio"> Juan Frizco Situmeang</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html#bio">Bio</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#awards">Awards</a></li>
+        <li><a href="index.html#certificates">Certificates</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <!-- Dark/Light Mode Button -->
+        <li>
+          <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+            <span id="themeIcon" style="display: inline-flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="project-detail">
+    <a href="index.html#projects" class="back-btn">
+      &larr; Back to Portfolio Projects
+    </a>
+
+    <div class="info-card">
+
+      <!-- Carousel Gambar Utama -->
+      <div class="hero-carousel-wrapper">
+        <button class="nav-arrow prev" onclick="prevHeroImg()" aria-label="Previous image">
+          <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <img id="heroImg" src="Gambar/java1.png" alt="Quiz Management System" class="project-hero-img" onerror="this.src='https://via.placeholder.com/800x400?text=Quiz+Management+System'">
+
+        <button class="nav-arrow next" onclick="nextHeroImg()" aria-label="Next image">
+          <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+      </div>
+
+      <h1>Quiz Management System</h1>
+      <p class="meta" style="font-size: 1.05rem; font-weight: 500;">Object-Oriented Programming Practicum Project &bull; Universitas Prima Indonesia</p>
+      
+      <div style="margin-top: 1rem;">
+        <span class="tag">Java</span>
+        <span class="tag">NetBeans</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Desktop Application</span>
+        <span class="tag">OOP Concepts</span>
+      </div>
+
+      <div class="detail-grid">
+        <div>
+          <h3>Overview</h3>
+          <p style="text-align: justify; max-width: none;">
+            The <strong>Quiz Management System</strong> is a Java-based desktop application developed using NetBeans and MySQL as the final project for the Object-Oriented Programming Practicum. The system provides a structured digital environment for conducting automated quizzes and exams while managing student performance records.
+          </p>
+
+          <h3 style="margin-top: 1.5rem;">Key Features</h3>
+          <ul class="feature-list">
+            <li><strong>Student Quiz Portal:</strong> Provides students with an intuitive interface to take scheduled quizzes, select answers, and view instant grading results.</li>
+            <li><strong>Admin &amp; Instructor Panel:</strong> Allows educators to manage question banks, set passing scores, and monitor overall class performance.</li>
+            <li><strong>Automated Grading &amp; Analytics:</strong> Calculates scores automatically upon quiz completion and stores detailed attempt history.</li>
+            <li><strong>Database Integration:</strong> Connects to a MySQL relational database to handle secure user authentication, question storage, and score records.</li>
+          </ul>
+
+          <h3 style="margin-top: 1.5rem;">Project Impact</h3>
+          <p style="text-align: justify; max-width: none;">
+            This project effectively applied core Object-Oriented Programming (OOP) principles such as encapsulation, inheritance, and polymorphism in Java to build a maintainable desktop software solution.
+          </p>
+        </div>
+
+        <div>
+          <div class="info-card" style="background: var(--bg); padding: 1.25rem;">
+            <h3 style="margin-bottom: 0.75rem;">Project Info</h3>
+            
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Category:</strong> Desktop App Development</p>
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Role:</strong> Software Developer</p>
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Context:</strong> OOP Practicum Coursework</p>
+
+            <div class="download-links" style="margin-top: 1.25rem;">
+              <button type="button" class="download-btn" style="width: 100%; cursor: pointer;" onclick="openGalleryModal(heroImages)">
+                View All Projects &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigasi Bawah Proyek 3 -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); gap: 1rem; flex-wrap: wrap;">
+        <a href="project2.html" class="download-btn">
+          &larr; Previous Project: E-Commerce Website
+        </a>
+        <a href="project4.html" class="download-btn">
+          Next Project: UI/UX Mobile Learning App &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- Zoom Modal Element & Image Gallery -->
+<div id="certModal" class="modal">
+  <span class="modal-close" onclick="closeCertModal()">&times;</span>
+  
+  <!-- Modal Left Arrow Button -->
+  <button class="nav-arrow prev" id="modalPrevBtn" onclick="prevModalImg(event)" aria-label="Previous image" style="display: none;">
+    <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+  </button>
+
+  <img class="modal-content" id="certModalImg" alt="Image Preview">
+
+  <!-- Modal Right Arrow Button -->
+  <button class="nav-arrow next" id="modalNextBtn" onclick="nextModalImg(event)" aria-label="Next image" style="display: none;">
+    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+  </button>
+</div>
+
+<footer>
+  <p class="meta">&copy; 2026 - Juan Frizco Situmeang</p>
+</footer>
+
+<script>
+  /* ========================================================= */
+  /*  MODAL POPUP & IMAGE GALLERY FUNCTIONS                    */
+  /* ========================================================= */
+  let galleryImages = [];
+  let currentImageIndex = 0;
+
+  function openGalleryModal(imagesArray) {
+    galleryImages = imagesArray;
+    currentImageIndex = 0;
+    updateModalView();
+    document.getElementById('certModal').classList.add('active');
+  }
+
+  function updateModalView() {
+    const modalImg = document.getElementById('certModalImg');
+    const prevBtn = document.getElementById('modalPrevBtn');
+    const nextBtn = document.getElementById('modalNextBtn');
+
+    modalImg.src = galleryImages[currentImageIndex];
+
+    if (galleryImages.length > 1) {
+      if (prevBtn) prevBtn.style.display = 'inline-flex';
+      if (nextBtn) nextBtn.style.display = 'inline-flex';
+    } else {
+      if (prevBtn) prevBtn.style.display = 'none';
+      if (nextBtn) nextBtn.style.display = 'none';
+    }
+  }
+
+  function prevModalImg(event) {
+    if (event) event.stopPropagation();
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateModalView();
+  }
+
+  function nextModalImg(event) {
+    if (event) event.stopPropagation();
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    updateModalView();
+  }
+
+  function closeCertModal() {
+    document.getElementById('certModal').classList.remove('active');
+  }
+
+  // Menutup modal jika area luar gambar diklik
+  const certModalElem = document.getElementById('certModal');
+  if (certModalElem) {
+    certModalElem.addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeCertModal();
+      }
+    });
+  }
+
+  /* ========================================================= */
+  /*  HERO CAROUSEL NAVIGATION                                 */
+  /* ========================================================= */
+  const heroImages = [
+    'Gambar/java1.png',
+    'Gambar/java2.png',
+    'Gambar/java3.png',
+    'Gambar/java4.png',
+    'Gambar/java5.png',
+    'Gambar/java6.png',
+    'Gambar/java7.png',
+    'Gambar/java8.png'
+  ];
+  let currentHeroIndex = 0;
+
+  function updateHeroImage() {
+    const heroImg = document.getElementById('heroImg');
+    if (heroImg) {
+      heroImg.src = heroImages[currentHeroIndex];
+    }
+  }
+
+  function prevHeroImg() {
+    currentHeroIndex = (currentHeroIndex - 1 + heroImages.length) % heroImages.length;
+    updateHeroImage();
+  }
+
+  function nextHeroImg() {
+    currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
+    updateHeroImage();
+  }
+</script>
+<script src="theme.js"></script>
+
+</body>
+</html>

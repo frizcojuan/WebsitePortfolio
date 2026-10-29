@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Commerce Website - Juan Frizco Situmeang</title>
+<meta name="description" content="Detail Project E-Commerce Website oleh Juan Frizco Situmeang">
+<link rel="icon" type="image/png" href="logojuone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+<header>
+  <div class="bar">
+    <a class="brand" href="index.html#bio"> Juan Frizco Situmeang</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html#bio">Bio</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#awards">Awards</a></li>
+        <li><a href="index.html#certificates">Certificates</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <!-- Dark/Light Mode Button -->
+        <li>
+          <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+            <span id="themeIcon" style="display: inline-flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="project-detail">
+    <a href="index.html#projects" class="back-btn">
+      &larr; Back to Portfolio Projects
+    </a>
+
+    <div class="info-card">
+
+      <!-- Carousel Gambar Utama -->
+      <div class="hero-carousel-wrapper">
+        <button class="nav-arrow prev" onclick="prevHeroImg()" aria-label="Previous image">
+          <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <img id="heroImg" src="Gambar/Ecommerce1.png" alt="E-Commerce Website" class="project-hero-img" onerror="this.src='https://via.placeholder.com/800x400?text=Website+E-Commerce'">
+
+        <button class="nav-arrow next" onclick="nextHeroImg()" aria-label="Next image">
+          <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+      </div>
+
+      <h1>E-Commerce Website</h1>
+      <p class="meta" style="font-size: 1.05rem; font-weight: 500;">E-Commerce Course Project &bull; Universitas Prima Indonesia</p>
+
+      <div style="margin-top: 1rem;">
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">E-Commerce Platform</span>
+      </div>
+
+      <div class="detail-grid">
+        <div>
+          <h3>Overview</h3>
+          <p style="text-align: justify; max-width: none;">
+            The <strong>E-Commerce Website</strong> was developed as the final project for the E-Commerce course. The platform implements core electronic commerce concepts through a web-based environment designed to support seamless product exploration and online transaction workflows.
+          </p>
+
+          <h3 style="margin-top: 1.5rem;">Key Features</h3>
+          <ul class="feature-list">
+            <li><strong>Product Catalog &amp; Filtering:</strong> Displays available products with detailed descriptions, pricing, and category filters for easy navigation.</li>
+            <li><strong>Interactive Shopping Cart:</strong> Allows users to add, update, and manage selected items prior to checkout.</li>
+            <li><strong>Transaction &amp; Order Flow:</strong> Streamlines the purchase process from cart review to order confirmation and transaction summary.</li>
+            <li><strong>Database Management:</strong> Backed by MySQL to handle dynamic product inventories, user details, and transaction logs.</li>
+          </ul>
+
+          <h3 style="margin-top: 1.5rem;">Project Impact</h3>
+          <p style="text-align: justify; max-width: none;">
+            This project demonstrated practical skills in combining front-end interfaces with back-end database operations, establishing a full user flow for web-based retail applications.
+          </p>
+        </div>
+
+        <div>
+          <div class="info-card" style="background: var(--bg); padding: 1.25rem;">
+            <h3 style="margin-bottom: 0.75rem;">Project Info</h3>
+
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Category:</strong> Web Development / E-Commerce</p>
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Role:</strong> Full-Stack Developer</p>
+            <p style="font-size: 0.9rem; margin: 0.4rem 0;"><strong>Context:</strong> Academic Coursework</p>
+
+            <div class="download-links" style="margin-top: 1.25rem;">
+              <button type="button" class="download-btn" style="width: 100%; cursor: pointer;" onclick="openGalleryModal(heroImages)">
+                View All Projects &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigasi Bawah Proyek -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); gap: 1rem; flex-wrap: wrap;">
+        <a href="project1.html" class="download-btn">
+          &larr; Previous Project: Cycle Count Tool
+        </a>
+        <a href="project3.html" class="download-btn">
+          Next Project: Quiz Management System &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- Zoom Modal Element & Image Gallery -->
+<div id="certModal" class="modal">
+  <span class="modal-close" onclick="closeCertModal()">&times;</span>
+
+  <button class="nav-arrow prev" id="modalPrevBtn" onclick="prevModalImg(event)" aria-label="Previous image" style="display: none;">
+    <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+  </button>
+
+  <img class="modal-content" id="certModalImg" alt="Image Preview">
+
+  <button class="nav-arrow next" id="modalNextBtn" onclick="nextModalImg(event)" aria-label="Next image" style="display: none;">
+    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+  </button>
+</div>
+
+<footer>
+  <p class="meta">&copy; 2026 - Juan Frizco Situmeang</p>
+</footer>
+
+<script>
+  /* Daftar gambar dipakai bersama oleh carousel hero dan galeri modal */
+  const heroImages = [
+    'Gambar/Ecommerce1.png',
+    'Gambar/Ecommerce2.png',
+    'Gambar/Ecommerce3.png'
+  ];
+
+  /* ---------- Carousel hero ---------- */
+  let currentHeroIndex = 0;
+
+  function updateHeroImage() {
+    const heroImg = document.getElementById('heroImg');
+    if (heroImg) heroImg.src = heroImages[currentHeroIndex];
+  }
+
+  function prevHeroImg() {
+    currentHeroIndex = (currentHeroIndex - 1 + heroImages.length) % heroImages.length;
+    updateHeroImage();
+  }
+
+  function nextHeroImg() {
+    currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
+    updateHeroImage();
+  }
+
+  /* ---------- Modal galeri ---------- */
+  let galleryImages = [];
+  let currentImageIndex = 0;
+
+  function openGalleryModal(imagesArray) {
+    galleryImages = imagesArray;
+    currentImageIndex = 0;
+    updateModalView();
+    document.getElementById('certModal').classList.add('active');
+  }
+
+  function updateModalView() {
+    const modalImg = document.getElementById('certModalImg');
+    const prevBtn = document.getElementById('modalPrevBtn');
+    const nextBtn = document.getElementById('modalNextBtn');
+    const multiple = galleryImages.length > 1;
+
+    modalImg.src = galleryImages[currentImageIndex];
+    if (prevBtn) prevBtn.style.display = multiple ? 'inline-flex' : 'none';
+    if (nextBtn) nextBtn.style.display = multiple ? 'inline-flex' : 'none';
+  }
+
+  function prevModalImg(event) {
+    if (event) event.stopPropagation();
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateModalView();
+  }
+
+  function nextModalImg(event) {
+    if (event) event.stopPropagation();
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    updateModalView();
+  }
+
+  function closeCertModal() {
+    document.getElementById('certModal').classList.remove('active');
+  }
+
+  /* Tutup modal jika area di luar gambar diklik */
+  const certModalElem = document.getElementById('certModal');
+  if (certModalElem) {
+    certModalElem.addEventListener('click', function (e) {
+      if (e.target === this) closeCertModal();
+    });
+  }
+</script>
+<script src="theme.js"></script>
+
+</body>
+</html>
